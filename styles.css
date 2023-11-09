@@ -1,5 +1,7 @@
 @import url(comico.css);
 
+@import "https://unpkg.com/open-props";
+
 /* diagnostic styling */
 /* * {
   outline: 1px solid gray;
