@@ -4,5 +4,5 @@
 
 
 ## Citation
-[fontshare] (https://www.fontshare.com/fonts/comico)
-[openprops] (https://open-props.style/)
+* [fontshare] (https://www.fontshare.com/fonts/comico)
+* [openprops] (https://open-props.style/)
