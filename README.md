@@ -1,2 +1,8 @@
-# -jsanch93.github.io
-My wonderful website.
+# Welcome to the world of JOEY!
+
+> Thanks for visting!
+
+
+## Citation
+[fontshare] (https://www.fontshare.com/fonts/comico)
+[openprops] (https://open-props.style/)
