@@ -87,7 +87,7 @@ body {
     transform: rotateY(180deg);
   }
   
-  section img {
+  #dude {
     width: 75%;
     object-fit: cover;
     position: relative;
