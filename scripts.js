@@ -1,9 +1,9 @@
 //data
 const pics = [
-  "beam.png",
-  "https://i.postimg.cc/NjQXxmr4/Rectangle.jpg",
+  "photos/beam.png",
+  "photos/GBW.png",
 
-  "https://assets.codepen.io/16425/explore.png"
+  "photos/timber.png"
 ];
 
 //random number gen
