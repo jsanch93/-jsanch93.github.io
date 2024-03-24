@@ -1,10 +1,18 @@
-console.log("👍 JS Connected");
+//data
+const pics = [
+  "https://assets.codepen.io/16425/halloween.png",
+  "https://i.postimg.cc/NjQXxmr4/Rectangle.jpg",
 
-// get all the card
-document.querySelectorAll(".card").forEach((item) => {
-  // for each item i.e. card, do this
-  item.addEventListener("click", (event) => {
-    // toggle class on card
-    item.classList.toggle("flipped");
-  });
-});
+  "https://assets.codepen.io/16425/explore.png"
+];
+
+//random number gen
+const randNum = Math.floor(Math.random() * 3);
+
+// get stuff
+
+const randoImage = document.querySelector("img");
+
+//set stuff
+
+randoImage.src = pics[randNum];

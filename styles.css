@@ -1,97 +1,139 @@
-@import url(comico.css);
-
-@import "https://unpkg.com/open-props";
-
-/* diagnostic styling */
-/* * {
-  outline: 1px solid gray;
-}
- */
-/* layout */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url(ufo.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    font-family: 'Comico-Regular';
-  }
-  
-  /* scene */
-  .scene {
-    width: 300px;
-    height: 500px;
-  
-    /* set perspective   */
-    perspective: 600px;
-  }
-  
-  /* card */
-  .card {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    left: 5px; 
-    top: 225px;
-    
-  
-    cursor: pointer;
-    transition: transform 0.5s;
-  
-    /* preserve child 3d   */
-    transform-style: preserve-3d;
-  }
-  
-  /* face */
-  .face {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-  
-    /* hide back face   */
-    backface-visibility: hidden;
-  }
-  
-  .front {
-    /* background: var(--yellow-4); */
-    text-align: center;
-    color: var(--green-12);
-   
-  }
-  
-  .back {
-    /* background: var(--yellow-2);  */
-    color: var(--green-12);
-    top: 100px;
-    /* flip it default   */
-    transform: rotateY(180deg);
-  }
-  
-  a {
-    color: var(--green-12);
+  background: rgb(33, 28, 106);
+  background: linear-gradient(
+    175deg,
+    rgba(33, 28, 106, 1) 6%,
+    rgba(89, 180, 195, 1) 38%,
+    rgba(116, 226, 145, 1) 62%,
+    rgba(239, 243, 150, 1) 93%
+  );
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+}
+
+article h1 {
+  font-size: 2.5rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+a:link,
+a:visited {
+  color: #496989;
+  text-decoration: none;
+  background: #ace2e1;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 8px;
+  margin: 5px;
+  /*   border: #378ce7 solid 1px; */
+  box-shadow: 2px 2px 5px black;
+}
+
+a:hover,
+a:active {
+  color: black;
+  background: #41c9e2;
+  /*   transform: scale(1.5);
+  transition: transform 1s; */
+  padding: 8px;
+}
+
+/* faux GSAP timeline animations */
+
+img {
+  /* fit image to container */
+  display: flex;
+  max-width: 100%;
+
+  /* full height image. Fit to container. no stretching. */
+  height: 100vh;
+  object-fit: cover;
+}
+
+p {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+}
+
+h1 {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+}
+
+/* img {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-delay: 5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+} */
+
+#j:hover {
+  fill: #378ce7;
+}
+
+#o:hover {
+  fill: #6420aa;
+}
+
+#e:hover {
+  fill: #ff3ea5;
+}
+
+#y:hover {
+  fill: #ff7ed4;
+}
+
+#s:hover {
+  fill: #ee4266;
+}
+
+#a:hover {
+  fill: #f4538a;
+}
+
+#n:hover {
+  fill: #50c4ed;
+}
+
+#c:hover {
+  fill: #b784b7;
+}
+
+#h:hover {
+  fill: #15f5ba;
+}
+
+#i:hover {
+  fill: #e78895;
+}
+
+#r:hover {
+  fill: #81689d;
+}
+
+/* Our Custom Animation  */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
 
-  p {
-    text-align: center;
+  100% {
+    opacity: 1;
   }
-
-
-
-  /* flip card
-    * toggle with JS
-    */
-  .flipped {
-    transform: rotateY(180deg);
-  }
-  
-  #dude {
-    width: 75%;
-    object-fit: cover;
-    position: relative;
-    left: 25px;
-    
-  }
-  
+}
