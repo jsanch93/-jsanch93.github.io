@@ -1,6 +1,6 @@
 //data
 const pics = [
-  "https://assets.codepen.io/16425/halloween.png",
+  "beam.png",
   "https://i.postimg.cc/NjQXxmr4/Rectangle.jpg",
 
   "https://assets.codepen.io/16425/explore.png"
