@@ -2,12 +2,12 @@
 const pics = [
   "photos/beam.png",
   "photos/GBW.png",
-
+"photos/run.png",
   "photos/timber.png"
 ];
 
 //random number gen
-const randNum = Math.floor(Math.random() * 3);
+const randNum = Math.floor(Math.random() * 4);
 
 // get stuff
 
