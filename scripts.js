@@ -16,3 +16,5 @@ const randoImage = document.querySelector("img");
 //set stuff
 
 randoImage.src = pics[randNum];
+
+
