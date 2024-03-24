@@ -1,6 +1,6 @@
 //data
 const pics = [
-  "photos/beam.png",
+  "photos/me1.png",
   "photos/GBW.png",
 "photos/run.png",
   "photos/timber.png"
